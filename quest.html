@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test-PANITAS</title>
+  <link rel="stylesheet" type="text/css" href="styles/quest.css">
+  <link rel="shortcut icon" href="IMG/logo.png">
+
+  <script type="text/javascript">
+    window.history.forward();
+    function sinVueltaAtras(){ window.history.forward(); }
+  </script>
+
+</head>
+<body onload="sinVueltaAtras();" onpageshow="if(event.persisted) sinVueltaAtras();" onunload="">
+	<section class="logo">
+		<img src="IMG/logo.png">
+	</section>
+	<form action="php/ActualizarDatos.php" method="POST">
+  		<section class="carousel">
+  	
+   		<div class="contenedor">
+
+   			<div class="checkbox">
+	   			<h4>¿Cuál es tu nivel de estudios?</h4>
+	   			<img class = "IMG1" src="IMG/IMG7.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v1" id="check1" value="0.0"><label for="check1">Primaria</label></li>
+	        		<li><input type="checkbox" name="v1" id="check2" value="0.2"><label for="check2">Secundaria</label></li>
+	        		<li><input type="checkbox" name="v1" id="check3" value="0.5"><label for="check3">Preparatoria</label></li>
+	        		<li><input type="checkbox" name="v1" id="check4" value="1.0"><label for="check4">Universidad</label></li>
+	        	</ul>
+	        </div>
+
+	        <div class="checkbox2">
+	   			<h4>¿Cuál es tu ocupación?</h4>
+	   			<img class = "IMG1" src="IMG/IMG10.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v2" id="check5" value="0.0"><label for="check5">Trabajador</label></li>
+	        		<li><input type="checkbox" name="v2" id="check6" value="0.5"><label for="check6">Estudiante</label></li>
+	        		<li><input type="checkbox" name="v2" id="check7" value="1.0"><label for="check7">Desempleado</label></li>
+	        	</ul>
+	        </div>
+
+	        <div class="checkbox3">
+	   			<h4>¿Te consideras una persona....?</h4>
+	   			<img class = "IMG1" src="IMG/IMG21.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v3" id="check8" value="0.0"><label for="check8">Introvertida</label></li>
+	        		<li><input type="checkbox" name="v3" id="check9" value="1.0"><label for="check9">Extrovertida</label></li>
+	        	</ul>
+	        </div>
+
+	        <div class="checkbox4">
+	   			<h4>¿Te gusta viajar o visitar otros lugares?</h4>
+	   			<img class = "IMG1" src="IMG/IMG13.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v4" id="check10" value="0.0"><label for="check10">No me gusta viajar</label></li>
+	        		<li><input type="checkbox" name="v4" id="check11" value="0.2"><label for="check11">Rara vez</label></li>
+	        		<li><input type="checkbox" name="v4" id="check12" value="0.5"><label for="check12">A veces</label></li>
+	        		<li><input type="checkbox" name="v4" id="check13" value="1.0"><label for="check13">ME ENCANTA!</label></li>
+	        	</ul>
+	        </div>
+
+	        <div class="checkbox5">
+	   			<h4>¿Te gusta de la música?</h4>
+	   			<img class = "IMG1" src="IMG/IMG17.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v5" id="check14" value="0.0"><label for="check14">El silencio es lo mejor</label></li>
+	        		<li><input type="checkbox" name="v5" id="check15" value="0.2"><label for="check15">Rara vez</label></li>
+	        		<li><input type="checkbox" name="v5" id="check16" value="0.5"><label for="check16">Con frecuencia</label></li>
+	        		<li><input type="checkbox" name="v5" id="check17" value="1.0"><label for="check17">Mi vida es una canción!</label></li>
+	        	</ul>
+	        </div>
+
+
+	        <div class="checkbox6">
+	   			<h4>¿Te gusta la literatura o leer algo?</h4>
+	   			<img class = "IMG1" src="IMG/IMG16.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v6" id="check18" value="0.0"><label for="check18">Nunca he tocado un libro</label></li>
+	        		<li><input type="checkbox" name="v6" id="check19" value="0.2"><label for="check19">Es raro que lea</label></li>
+	        		<li><input type="checkbox" name="v6" id="check20" value="0.5"><label for="check20">Un par de libros</label></li>
+	        		<li><input type="checkbox" name="v6" id="check21" value="1.0"><label for="check21">Me encanta leer!</label></li>
+	        	</ul>
+	        </div>
+
+	        <div class="checkbox7">
+	   			<h4>¿Tocas algún instrumento?</h4>
+	   			<img class = "IMG1" src="IMG/IMG8.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v7" id="check22" value="0.0"><label for="check22">¿Mi voz cuenta?</label></li>
+	        		<li><input type="checkbox" name="v7" id="check23" value="0.5"><label for="check23">Solo uno</label></li>
+	        		<li><input type="checkbox" name="v7" id="check24" value="1.0"><label for="check24">2 a más soy una maquina!</label></li>
+	        	</ul>
+	        </div>
+
+	        <div class="checkbox8">
+	   			<h4>¿Cuánto tiempo pasas en redes sociales?</h4>
+	   			<img class = "IMG1" src="IMG/IMG20.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v8" id="check25" value="0.0"><label for="check25">0-2 tengo una vida</label></li>
+	        		<li><input type="checkbox" name="v8" id="check26" value="0.5"><label for="check26">2-4 tengo prioridades</label></li>
+	        		<li><input type="checkbox" name="v8" id="check27" value="1.0"><label for="check27">4hrs soy un influencer</label></li>
+	        	</ul>
+	        </div>
+
+	        <div class="checkbox9">
+	   			<h4>¿Planificar tus actividades o ser espontáneo?</h4>
+	   			<img class = "IMG1" src="IMG/IMG5.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v9" id="check28" value="0.0"><label for="check28">Planificador 4ever</label></li>
+	        		<li><input type="checkbox" name="v9" id="check29" value="0.5"><label for="check29">50 - 50 Ni uno ni otro</label></li>
+	        		<li><input type="checkbox" name="v9" id="check30" value="1.0"><label for="check30">Espontáneo así nomás!</label></li>
+	        	</ul>
+	        </div>
+
+
+	        <div class="checkbox10">
+	   			<h4>¿Tienes algún Hobbie?</h4>
+	   			<img class = "IMG1" src="IMG/IMG12.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v10" id="check31" value="0.0"><label for="check31">Mimir cuenta?</label></li>
+	        		<li><input type="checkbox" name="v10" id="check32" value="1.0"><label for="check32">1 o más</label></li>
+	        	</ul>
+	        </div>
+
+	        <div class="checkbox11">
+	   			<h4>¿Valoras una amistad?</h4>
+	   			<img class = "IMG1" src="IMG/IMG1.jpeg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v11" id="check33" value="0.0"><label for="check33">Nah, te traicionan</label></li>
+	        		<li><input type="checkbox" name="v11" id="check34" value="0.2"><label for="check34">Solo si es especial</label></li>
+	        		<li><input type="checkbox" name="v11" id="check35" value="0.5"><label for="check35">50 - 50 sin tanto compromiso</label></li>
+	        		<li><input type="checkbox" name="v11" id="check36" value="1.0"><label for="check36">Claro, Hnos. de SANGRE!</label></li>
+	        	</ul>
+	        </div>
+
+	        <div class="checkbox12">
+	   			<h4>¿Eres una persona organizada?</h4>
+	   			<img class = "IMG1" src="IMG/IMG9.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v12" id="check37" value="0.0"><label for="check37">Soy todo un desastre</label></li>
+	        		<li><input type="checkbox" name="v12" id="check38" value="0.5"><label for="check38">Estoy intentandolo</label></li>
+	        		<li><input type="checkbox" name="v12" id="check39" value="1.0"><label for="check39">Siempre!</label></li>
+	        	</ul>
+	        </div>
+
+
+			<div class="checkbox13">
+	   			<h4>¿Te consideras una persona espiritual?</h4>
+	   			<img class = "IMG1" src="IMG/IMG6.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v13" id="check40" value="0.0"><label for="check40">Nah, pura ciencia pa</label></li>
+	        		<li><input type="checkbox" name="v13" id="check41" value="0.5"><label for="check41">Algo, no soy fanático</label></li>
+	        		<li><input type="checkbox" name="v13" id="check42" value="1.0"><label for="check42">Claro! ¿No viste mi cuarzo?</label></li>
+	        	</ul>
+	        </div>
+
+	        <div class="checkbox14">
+	   			<h4>¿Te gusta cocinar?</h4>
+	   			<img class = "IMG1" src="IMG/IMG22.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v14" id="check43" value="0.0"><label for="check43">No, soy un desastre</label></li>
+	        		<li><input type="checkbox" name="v14" id="check44" value="0.5"><label for="check44">De vez cuando un huevito</label></li>
+	        		<li><input type="checkbox" name="v14" id="check45" value="1.0"><label for="check45">Dime Master Chief</label></li>
+	        	</ul>
+	        </div>	        
+
+	        <div class="checkbox15">
+	   			<h4>¿Valoras la puntualidad?</h4>
+	   			<img class = "IMG1" src="IMG/IMG19.jpg">
+
+	        	<ul>
+	        		<li><input type="checkbox" name="v15" id="check46" value="0.0"><label for="check46">No le doy importancia</label></li>
+	        		<li><input type="checkbox" name="v15" id="check47" value="0.5"><label for="check47">Depende de la situación</label></li>
+	        		<li><input type="checkbox" name="v15" id="check48" value="1.0"><label for="check48">Claro, el tiempo es oro!</label></li>
+	        	</ul>
+	        </div>
+	    </div>
+		<br>
+	
+  		</section>
+
+		<section class="resultado">
+			<input class="botons" name="enviar" type="submit", value="ENVIAR RESPUESTAS">
+		</section>
+
+		
+	</form>
+    <section class="down">
+    <div><p style="text-align:center">Proyecto Final - Inteligencia Artificial - TS Developers</p></div>
+  </section>
+
+
+</body>
+</html>

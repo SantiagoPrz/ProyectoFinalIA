@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro-PANITAS</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="shortcut icon" href="IMG/logo.png">
+
+</head>
+<body>
+
+	<div class="circulo1"></div>
+	<div class="circulo2"></div>
+
+	<section class="Formulario">
+		<form action="php/NuevoUsuario.php" method="POST">
+			<h4>Crear cuenta #Panitas</h4>
+			<input class="control" type="text" name="nombres", id="nombre", placeholder="Ingresa tu nombre completo" required>
+			<input class="control" type="text" name="username", id="users", placeholder="Ingresa un usuario" required>
+			<input class="control" type="text" name="edades", id="edad", placeholder="Edad" required>
+			<input class="control" type="text" name="numero", id="numeros", placeholder="Número de celular" required>
+			<input class="control" type="password" name="pass", id="password", placeholder="Contraseña" required>
+			<input class="botons" type="submit", value="Ingresar">
+			<p>¿Tienes una cuenta?</p>
+			<a href="login.html">Iniciar Sesión</a>
+		</form>
+	</section>
+
+
+	<div class="cuadrado1"></div>
+	<div class="cuadrado2"></div>
+
+	<section class="Texto1">
+		<h4>#HAZMATCH</h4>
+	</section>
+	
+	<img class= Banner1 src="IMG/IMG2.jpg">	
+	<img class= logo src="IMG/logo.png">
+
+	<section class="down">
+		<div><p style="text-align:center">Proyecto Final - Inteligencia Artificial - TS Developers</p></div>
+	</section>
+
+	<script>window.alert("El usuario que ingresaste ya esta en uso, elige uno diferente.");</script>
+
+</body>
+</html>
